@@ -1,0 +1,151 @@
+:root {
+    --red-color: #D04836; 
+    --light-red-color: #F6DAD7; 
+    --white-color: #ffffff;
+    --black-color: #282a35;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: Arial;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    height: 100vh;
+    padding: 10px;
+}
+
+h1, h2, h3, h4{
+    padding: 10px;
+    font-weight: bold;
+}
+
+p {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color:#D04836
+}
+
+h3 {
+    font-size: 1.5rem;
+    color:#D04836
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 12px;
+}
+
+nav ul li {
+    margin-bottom: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.button-selected a {
+    color: #D04836; 
+    background-color: #FFFFFF; 
+    border: 1px solid #D04836; 
+    font-weight: bold; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+    display: block;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 1rem; 
+    font-family: Verdana, sans-serif;
+}
+
+nav ul li a { 
+    text-decoration: none;
+    color: var(--white-color);
+    display: block;
+    background-color: var(--red-color);
+    border: 1px solid var(--red-color);
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul li a:hover { 
+    color: var(--red-color);
+    background-color: var(--white-color);
+}
+
+.active { 
+    background-color: var(--white-color);
+    color: var(--red-color);
+    font-weight: bold;
+}
+
+main {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+section a {
+    color: var(--red-color);
+    text-decoration: none;
+}
+
+section a:hover {
+    color: var(--red-color);
+    text-decoration: underline;
+}
+
+section h2, section h3 {
+    color: var(--red-color);
+}
+
+section {
+    padding: 20px 0;
+
+}
+
+aside {
+    background-color: var(--light-red-color);
+    color: var(--red-color);
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.center-bar a {
+    text-decoration: none; 
+    color: #D04836; 
+}
+
+.center-bar {
+    font-family: Verdana, sans-serif;
+}

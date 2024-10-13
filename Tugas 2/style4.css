@@ -1,0 +1,126 @@
+:root {
+    --neon-color: #84c754;
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Courier New";
+    background-color: var(--black-color);
+    color: var(--neon-color);
+    padding: 30px;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1, header p{
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+main {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    margin: 8px;
+}
+
+nav ul li a {
+    color: var(--neon-color);
+    text-decoration: none;
+}
+
+section a:hover {
+    color: var(--white-color);
+}
+
+
+nav ul li a:hover, section a {
+    color: var(--white-color);
+}
+
+.active {
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.right-bar {
+    width: 30%;
+    background-color: var(--black-color);
+    border: 1px solid var(--white-color);
+    padding: 16px;
+    color: white;
+    border-radius: 4px;
+    position: absolute;     
+    top: 70px;               
+    right: 30px;  
+}
+
+.button-selected a {
+    color: var(--white-color);
+}
+
+footer {
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+    border-radius: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    nav {
+        order: 1;
+        flex: 60%;
+    }
+
+    aside {
+        order: 2;
+        flex: 20%;
+    }
+
+    section {
+        order: 3;
+        flex: 100%;
+    }
+    
+}
+
+.center-bar a {
+    color: var(--white-color);
+}
